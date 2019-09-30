@@ -33,8 +33,7 @@ lab2:  DEC DI
        INT 21H
        .EXIT
  
-sum1 PROC ; procedure declaration.
-           ;newline begin
+sum1 PROC ; procedure newline begin
        MOV AL, 0
        MOV CX, DIM
        MOV DI, 0
@@ -44,7 +43,6 @@ sum2:  ADD AL,VETT[DI]
        DEC CX
        CMP CX,0
        JNZ sum2 
-           ;newline begin
        RET ; return to caller.
 sum1 ENDP  
       
